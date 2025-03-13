@@ -1,1 +1,26 @@
-bbzz
+#include <stdio.h>
+
+int main() {
+    int horas;
+    float pago, isr, sbruto, desc, sneto;
+
+    // Definimos valores de pago por hora e ISR
+    isr = 0.1;
+    pago = 100.00;
+
+    // Pedimos al usuario las horas trabajadas
+    printf("Ingrese las horas trabajadas: ");
+    scanf("%d", &horas);
+
+    // Calculamos salario bruto, descuento e ingreso neto
+    sbruto = horas * pago;
+    desc = sbruto * isr;
+    sneto = sbruto - desc;
+
+    // Mostramos resultados
+    printf("Salario Bruto: %.2f\n", sbruto);
+    printf("Descuento ISR: %.2f\n", desc);
+    printf("Salario Neto: %.2f\n", sneto);
+
+    return 0;
+}
