@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donasyaelavina"/>
+        <attribute name="authors" value="blanca estela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-26 09:37:29 p. m."/>
+        <attribute name="created" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswOToxNTo1MSBwLiBtLjszNzc3"/>
+        <attribute name="edited" value="YmxhbmNhIGVzdGVsYTtMQVBUT1AtMUI3SlQ1QkU7MjAyNS0wMy0yNjswOTozNzoyOSBwLiBtLjsxOzM4OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="donas" type="Integer" array="False" size=""/>
+            <declare name="cantidad" type="Integer" array="False" size=""/>
+            <declare name="costo" type="Integer" array="False" size=""/>
+            <assign variable="donas" expression="10"/>
+            <assign variable="cantidad" expression="0"/>
+            <input variable="cantidad"/>
+            <assign variable="costo" expression="0"/>
+            <if expression="cantidad&gt;49">
+                <then>
+                    <assign variable="costo" expression="(cantidad*donas)-(cantidad*2)"/>
+                    <output expression="costo" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cantidad&gt;29">
+                        <then>
+                            <assign variable="costo" expression="(cantidad*donas)-(cantidad*1)"/>
+                            <output expression="costo" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="costo" expression="(cantidad*donas)"/>
+                            <output expression="costo" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
