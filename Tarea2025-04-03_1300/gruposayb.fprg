@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="gruposayb"/>
+        <attribute name="authors" value="yaela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 01:14:48 p. m."/>
+        <attribute name="created" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDI7MTI6NTk6MjAgcC4gbS47MzA2NA=="/>
+        <attribute name="edited" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDI7MDE6MTQ6NDggcC4gbS47MTszMTcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="nombre" type="String" array="False" size=""/>
+            <input variable="sexo"/>
+            <if expression="sexo==&quot;m&quot;">
+                <then>
+                    <input variable="nombre"/>
+                    <if expression="nombre &gt;&quot;n&quot;">
+                        <then>
+                            <output expression="&quot;grupo a&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;grupo b&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <input variable="nombre"/>
+                    <if expression="nombre&lt;&quot;m&quot;">
+                        <then>
+                            <output expression="&quot;grupo a&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;grupo b&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
