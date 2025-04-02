@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="preciosedad"/>
+        <attribute name="authors" value="yaela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 01:18:38 p. m."/>
+        <attribute name="created" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDI7MDE6MTQ6NTcgcC4gbS47MzA2Mw=="/>
+        <attribute name="edited" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDI7MDE6MTg6MzggcC4gbS47MTszMTc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edadcliente" type="Integer" array="False" size=""/>
+            <input variable="edadcliente"/>
+            <if expression="edadcliente&gt;18">
+                <then>
+                    <output expression="&quot;paga 500&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edadcliente&gt;4">
+                        <then>
+                            <output expression="&quot;paga 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edadcliente&gt;=0">
+                                <then>
+                                    <output expression="&quot;pasa gratis&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;ERROR&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
