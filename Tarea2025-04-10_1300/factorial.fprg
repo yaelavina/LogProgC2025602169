@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="yaela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 09:01:50 p. m."/>
+        <attribute name="created" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDg7MDk6MTA6MDAgcC4gbS47MzA2MQ=="/>
+        <attribute name="edited" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDk7MDk6MDE6NTAgcC4gbS47MjszMTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, c, factorial" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escribe un numero: &quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="c" expression="1"/>
+            <assign variable="factorial" expression="1"/>
+            <while expression="c&lt;=a">
+                <assign variable="factorial" expression="factorial*c"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

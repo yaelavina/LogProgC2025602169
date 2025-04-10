@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sucesion"/>
+        <attribute name="authors" value="yaela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 09:10:47 p. m."/>
+        <attribute name="created" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDg7MTA6NDY6NDYgcC4gbS47MzA3Mg=="/>
+        <attribute name="edited" value="eWFlbGE7TEFQVE9QLTZNVlVIMURKOzIwMjUtMDQtMDk7MDk6MTA6NDcgcC4gbS47MjszMTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <assign variable="a" expression="1"/>
+            <assign variable="b" expression="2"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="d" expression="0"/>
+            <while expression="d&lt;64">
+                <assign variable="c" expression="a+b"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="c"/>
+                <assign variable="d" expression="d+1"/>
+                <output expression="d" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
